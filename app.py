@@ -38,10 +38,10 @@ def predict():
         prediction = est.predict(k)
         print(prediction)
             # Generate prediction text based on the result
-        prediction_text = "the person is suffering from ckd" if inputs[-3]== 1 else "the person is not suffering from ckd"
+        prediction_text = "the person is suffering from ckd" if inputs[-5]== 1 else "the person is not suffering from ckd"
 
             # Return the prediction text as JSON
-        return jsonify({'data': inputs[-3]})
+        return jsonify({'data': inputs[-5]})
     # except Exception as e:
     #         print("error")
             # Return error message if an exception occurs
